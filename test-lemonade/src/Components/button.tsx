@@ -19,8 +19,6 @@ function Button() {
     );
   };
 
-  console.log("ici", intervalState);
-
   return (
     <div className="button_wrapper">
       <button onClick={() => onCalculate()}>Valider</button>
