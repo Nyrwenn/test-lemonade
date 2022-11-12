@@ -13,7 +13,6 @@ export const calculate = (
       interval.push(minA);
     } else {
       return [0, 0];
-      //Nothing happens => error
     }
   }
 
@@ -25,7 +24,6 @@ export const calculate = (
     } else {
       interval.push(0);
       return [0, 0];
-      //Nothing happens => error
     }
   }
   return interval;

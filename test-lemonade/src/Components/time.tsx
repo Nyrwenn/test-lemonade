@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { timeState } from "../Redux/Actions/timeAction";
+import { changeValue } from "../Redux/Actions/timeAction";
 
 type Props = {
   idA: string;
@@ -13,7 +13,7 @@ function Time(props: Props) {
   const { idA, idB, title } = props;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    dispatch(timeState(e.target.id, parseInt(e.target.value)));
+    dispatch(changeValue(e.target.id, parseInt(e.target.value)));
   };
 
   return (

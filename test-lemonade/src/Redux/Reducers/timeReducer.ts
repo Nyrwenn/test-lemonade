@@ -8,7 +8,7 @@ export type InitialState = {
 const initialState: InitialState = { minA: 0, maxA: 0, minB: 0, maxB: 0 };
 
 export default function timeReducer(state = initialState, action: any) {
-  if (action.type === "timeState") {
+  if (action.type === "changeValue") {
     return {
       ...state,
       [action.payload.id]: action.payload.value,
